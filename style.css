@@ -1,0 +1,174 @@
+
+/* TO-DOs
+/* figure out what the size of the image in Hero section should be
+/* figure out the sizing of the images boxes in info section
+/* rename the .body class? */
+/* adjust padding  on sides in quote section to align with info
+/* fiz side padding throughout the page */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto, sans-serif;
+    margin: 0 auto; /*centers on the page*/
+    padding: 0;
+    max-width: 70%; /*to not take the whole width of the page*/
+}
+
+.header {
+    background: #1F2937;
+    font-size: 18px;
+    color: #E5E7EB;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 6em;
+}
+
+.logo {
+    font-size: 24px;
+    color: #F9FAF8;
+    font-weight: bold;
+}
+
+.body { 
+    background: #1F2937;
+    font-size: 18px;
+    color: #E5E7EB;
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 100px; /* side padding needs to correspond with the side padding of the header */
+    gap: 20px; /* when the window gets resized, the gap will still be there */
+}
+
+.body .title {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: left;
+    color: #F9FAF8;
+    padding: 0 0 .1em; /* set bottom padding only */
+}
+
+.body img {
+    width: 400px; 
+    height: 200px; 
+    background: grey;
+    border-radius: 4px;
+    /*flex: none;*/
+}
+
+.info {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 32px 100px 70px;
+}
+
+.content {
+    max-width: 200px;
+    text-align: center;
+}
+
+.info img {
+    width: 200px;
+    height: 200px;
+    border: 3px solid #3882F6;
+    border-radius: 4px;
+    background: white;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+    text-align: center;
+    padding: 32px;
+}
+
+.quote {
+    background-color: #E5E7EB;
+    font-style: italic; 
+    font-weight: lighter; 
+    font-size: 36px; 
+    color: #1F2937;
+    display: flex;
+    flex-direction: column;
+    padding: 70px 80px;
+}
+
+.author {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    color: #1F2937;
+    align-self: flex-end;
+}
+
+button {
+    font-family: Roboto, sans-serif;
+    background: #3882F6;
+    color: #F9FAF8;
+    border: none;
+    padding: .5em 2em;
+    border-radius: 8px;
+    margin: .5em 0;
+}
+
+.container {
+    background-color: white;
+
+}
+.call {
+    background: #3882F6;
+    display: flex;
+    /*flex-wrap: wrap;*/
+    justify-content: space-between;
+    padding: 32px 80px;
+    margin: 70px 80px;
+    border-radius: 8px;
+}
+
+.call .title {
+    background: #3882F6;
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+    text-align: left;
+    padding: 0px;
+}
+
+.call .subtext {
+    color: white;
+    font-size: 18px;
+}
+
+.call button {
+    border: 1px solid white;
+}
+.footer {
+    background: #1F2937;
+    font-size: 18px;
+    color: #E5E7EB;
+    /*display: flex;
+    justify-content: center;*/
+    text-align: center;
+    padding: 1em;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 16px; 
+}
+
+a {
+    text-decoration: none;
+    color: #E5E7EB;
+}
